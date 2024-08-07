@@ -11,7 +11,6 @@ def register():
     # # Добавьте свой код для обработки регистрации
 
     return render_template('RegistrationWindow.html', msg='')
-фыв
 
 if __name__ == "__main__":
     app.run()

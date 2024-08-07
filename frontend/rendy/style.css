@@ -55,11 +55,11 @@ form h1 {
 }
 
 .input-box input:focus {
-    border-color: rgb(98, 0, 255);
+    border-color: rgb(8, 18, 30);
 }
 
 .input-box input:focus + i {
-    color: rgb(98, 0, 255);
+    color: rgb(8, 18, 30);
 }
 
 .remember-forgot {
@@ -71,7 +71,7 @@ form h1 {
 }
 
 .remember-forgot a {
-    color: rgb(98, 0, 255);
+    color: rgb(8, 18, 30);
     text-decoration: none;
 }
 
@@ -92,7 +92,7 @@ form h1 {
 }
 
 .btn:hover {
-    background-color: rgb(78, 0, 204);
+    background-color: rgb(8, 18, 30);
 }
 
 .register-link {
@@ -101,7 +101,7 @@ form h1 {
 }
 
 .register-link a {
-    color: rgb(98, 0, 255);
+    color: rgb(8, 18, 30);
     text-decoration: none;
 }
 

@@ -10,14 +10,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(98, 0, 255);
+    background-color: rgb(8, 18, 30);
 }
 
 .wrapper {
-    background: #fff;
+    background: rgba(172, 23, 27);
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(172, 23, 27);
     max-width: 400px;
     width: 100%;
 }
@@ -25,7 +25,7 @@ body {
 form h1 {
     margin-bottom: 20px;
     font-size: 24px;
-    color: #333;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -55,11 +55,11 @@ form h1 {
 }
 
 .input-box input:focus {
-    border-color: rgb(98, 0, 255);
+    border-color: rgb(8, 18, 30);
 }
 
 .input-box input:focus + i {
-    color: rgb(98, 0, 255);
+    color: rgb(8, 18, 30);
 }
 
 .remember-forgot {
@@ -71,7 +71,7 @@ form h1 {
 }
 
 .remember-forgot a {
-    color: rgb(98, 0, 255);
+    color: rgb(8, 18, 30);
     text-decoration: none;
 }
 
@@ -82,7 +82,7 @@ form h1 {
 .btn {
     width: 100%;
     padding: 10px 0;
-    background-color: rgb(98, 0, 255);
+    background-color: rgb(8, 18, 30);
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -92,7 +92,7 @@ form h1 {
 }
 
 .btn:hover {
-    background-color: rgb(78, 0, 204);
+    background-color: rgb(8, 18, 30);
 }
 
 .register-link {
@@ -101,7 +101,7 @@ form h1 {
 }
 
 .register-link a {
-    color: rgb(98, 0, 255);
+    color: rgb(8, 18, 30);
     text-decoration: none;
 }
 

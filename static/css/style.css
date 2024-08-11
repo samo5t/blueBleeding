@@ -18,7 +18,7 @@ body {
 .wrapper {
     background: rgba(172, 23, 27);
     padding: 25px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 0 0 15px rgba(172, 23, 27);
     max-width: 400px;
     width: 100%;
@@ -41,7 +41,7 @@ form h1 {
     padding: 10px 40px 10px 15px;
     font-size: 16px;
     border: 2px solid #ddd;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     outline: none;
     transition: all 0.3s ease;
 }
@@ -86,7 +86,7 @@ form h1 {
     padding: 10px 0;
     background-color: rgb(8, 18, 30);
     border: none;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     color: #fff;
     font-size: 16px;
     cursor: pointer;

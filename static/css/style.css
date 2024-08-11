@@ -8,6 +8,10 @@
 }
 
 body {
+    background-color: rgb(8, 18, 30);
+}
+
+.body-style {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,4 +113,12 @@ form h1 {
 
 .register-link a:hover {
     text-decoration: underline;
+}
+
+.login-top-header {
+    text-align: right; 
+}
+
+.top-header {
+    background-color:rgba(172, 23, 27);
 }

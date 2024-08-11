@@ -1,0 +1,51 @@
+<!doctype html>
+<html>    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица ввода данных</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Поле</th>
+                <th>Значение</th>
+            </tr>
+            <tr>
+                <td>Имя</td>
+                <td><input type="text" name="name" placeholder="Введите ваше имя"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" placeholder="Введите ваш email"></td>
+            </tr>
+            <tr>
+                <td>Возраст</td>
+                <td><input type="number" name="age" placeholder="Введите ваш возраст"></td>
+            </tr>
+            <tr>
+                <td>Комментарий</td>
+                <td><textarea name="comment" placeholder="Ваш комментарий"></textarea></td>
+            </tr>
+            <tr>
+                <td>Страна</td>
+                <td>
+                    <select name="country">
+                        <option value="ru">Россия</option>
+                        <option value="ua">Украина</option>
+                        <option value="by">Беларусь</option>
+                        <option value="kz">Казахстан</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Отправить">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

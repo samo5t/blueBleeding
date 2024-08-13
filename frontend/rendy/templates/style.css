@@ -1,4 +1,99 @@
 * {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Calibri', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background: #9400fe;
+    padding: 15px 30px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+#languageSwitcher {
+    padding: 5px;
+    font-size: 16px;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+li {
+    margin-right: 25px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+li a:hover {
+    color: #ffc107;
+}
+
+button {
+    background-color: #343a40;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #495057;
+}
+
+button a {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button a:hover {
+    color: #ffc107;
+}
+
+
+
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -107,4 +202,4 @@ form h1 {
 
 .register-link a:hover {
     text-decoration: underline;
-}
+} */

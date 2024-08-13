@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Документ</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- здесь я сделаю шапку для сайта когда она будет готова перенесу ее куда следует -->
-     <!-- Randy -->
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="#">SamostGoim</a>
+                <select id="languageSwitcher">
+                    <option value="ru">RU</option>
+                    <option value="en">EN</option>
+                    <option value="es">ES</option>
+                </select>
+            </div>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><button><a href="#">Войти</a></button></li>
+                <li><button><a href="#">Регистрация</a></button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        document.getElementById('languageSwitcher').addEventListener('change', function () {
+            var lang = this.value;
+            if (lang === 'en') {
+                window.location.href = '/en';
+            } else if (lang === 'es') {
+                window.location.href = '/es';
+            } else {
+                window.location.href = '/ru';
+            }
+        });
+    </script>
 </body>
+
 </html>

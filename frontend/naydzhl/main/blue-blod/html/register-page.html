@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" href="/../static/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="body-style">
+    <div class="wrapper">
+        <form method="POST" action="/register">
+            <h1>
+                Регистрация
+            </h1>
+            <div class="input-box">
+                <input type="text" placeholder="Логин" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Почта" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name = "passwordLabel" placeholder="Пароль" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <!-- <div class="input-box">
+                <input type="password" name = "passwordLabel" placeholder="Повторите пароль" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div> -->
+            <!-- <div class="ramamber-forgot">
+                <label><input type="checkbox">Запомни меня</label>
+                <a href="#">Забыл пароль</a>
+            </div> -->
+            <button type="sumbit" class="btn">Зарегистрироваться</button>
+            <div class="register-link"></div>
+            <br>
+            <p>У вас уже есть учетная запись?<a href="">Войти</a></p>
+        </form>
+
+</body>
+
+</html>

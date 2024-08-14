@@ -42,14 +42,18 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 60px;
+            height: 70px;
             padding: 0 ;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
         .navbar .logo {
             color: white;
             font-size: 24px;
             font-weight: bold;
-            padding: 0 20px;
+            padding: 0 70px;
+        }
+        .navbar .logo img {
+            height: 110px; /* Высота логотипа */
         }
         .navbar .buttons {
             display: flex;
@@ -59,10 +63,11 @@
             background-color: rgb(116, 26, 26);
             border: none;
             color: white;
-            padding: 0 20px;
-            height: 60px;
+            padding: 0 30px;
+            height: 70px;
             cursor: pointer;
             transition: background-color 0.3s;
+            font-size: 16px;
         }
         .navbar button:hover {
             background-color: rgb(172,23,27);
@@ -82,7 +87,9 @@
         </span>
 </div>
     <div class="navbar">
-        <div class="logo">Логотип</div>
+        <div class="logo">
+            <img src="https://media.discordapp.net/attachments/1270117157988204646/1273156525548109824/Remove-bg.ai_1723614523985.png?ex=66bd96e9&is=66bc4569&hm=f683d6cfb605a15e0665a30678fa0a1dc0d2bd9b4c3b9342db07b50c6626b273&=&format=webp&quality=lossless&width=563&height=563" alt="Логотип">
+        </div>
         <div class="buttons">
             <button>Главная</button>
             <button>Поиск игроков</button>

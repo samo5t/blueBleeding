@@ -122,3 +122,9 @@ form h1 {
 .top-header {
     background-color:rgba(172, 23, 27);
 }
+
+.resized-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}

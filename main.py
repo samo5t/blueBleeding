@@ -1,16 +1,70 @@
-# This is a sample Python script.
+from flask import Flask, request, render_template, redirect, url_for, session
+import psycopg2
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+app = Flask(__name__)
+
+app.secret_key = 'your_secret_key'
+
+# Подключение к базе данных
+
+@app.route("/")
+def index():
+    return redirect(url_for('authorization'))
+
+@app.route("/authorization", methods=["GET", "POST"])
+def authorization():
+    dbname = 'pem'
+    user = 'postgres'
+    password = '1234'
+    host = 'localhost'
+    port = '5432'
+    if request.method == "POST":
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+        try:
+            # Подключение к базе данных
+            conn = psycopg2.connect(
+                dbname=dbname,
+                user=user,
+                password=password,
+                host=host,
+                port=port
+            )
+            username = request.form.get("loginLabel")
+            password = request.form.get("passwordLabel")
+            # Создание курсора
+            cur = conn.cursor()
+            print(username, password)
+            # Выполнение SQL-запроса для проверки пользователя
+            cur.execute("SELECT * FROM form WHERE username=%s AND password=%s", (username, password))
+            user = cur.fetchone()
 
+            # Закрытие курсора и соединения
+            cur.close()
+            conn.close()
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+            if user:
+                session['username'] = username
+                return redirect(url_for('header'))
+            else:
+                return render_template('authorization.html', msg='Invalid username or password')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+        except Exception as e:
+            return f"Ошибка: {e}"
+
+    return render_template('authorization.html', msg='')
+
+@app.route("/header", methods=["GET", "POST"])
+def header():
+    if 'username' in session:
+        return render_template('header.html', username=session['username'])
+    else:
+        return redirect(url_for('authorization'))
+
+@app.route("/logout")
+def logout():
+    session.pop('username', None)
+    return redirect(url_for('authorization'))
+
+if __name__ == "__main__":
+    app.run(debug=True)

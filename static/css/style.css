@@ -10,7 +10,70 @@
 body {
     background-color: rgb(8, 18, 30);
 }
-
+.marquee {
+            background-color: rgb(16, 23, 33);
+            color: white;
+            padding: 5px 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .marquee span {
+            display: inline-block;
+            animation: marquee 60s linear infinite;
+            word-spacing: 10%; /* Адаптивные отступы между предложениями */
+        }
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        body {
+            margin: 0;
+            font-family: "San Francisco", sans-serif;
+            background-color: rgb(16, 23, 33);
+            src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+        }
+        .navbar {
+            background-color: rgb(24, 40, 53);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            padding: 0 ;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 0 70px;
+        }
+        .navbar .logo img {
+            height: 110px; /* Высота логотипа */
+        }
+        .navbar .buttons {
+            display: flex;
+            gap: 0px;
+        }
+        .navbar button {
+            background-color: rgb(116, 26, 26);
+            border: none;
+            color: white;
+            padding: 0 30px;
+            height: 70px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 16px;
+        }
+        .navbar button:hover {
+            background-color: rgb(172,23,27);
+        }
+        .marquee .sentence {
+            margin-right: 200px; /* Адаптивные отступы между предложениями */
+        }
 .body-style {
     display: flex;
     justify-content: center;
@@ -20,12 +83,14 @@ body {
 }
 
 .wrapper {
-    background: rgba(172, 23, 27);
+    background: rgb(172,23,27);
+    background-color: rgb(116, 26, 26);
     padding: 25px;
     /* border-radius: 10px; */
-    box-shadow: 0 0 15px rgba(172, 23, 27);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     max-width: 400px;
     width: 100%;
+    transition: background-color 0.3s ease;
 }
 
 form h1 {

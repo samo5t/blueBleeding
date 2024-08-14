@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навбар</title>
+    <style>
+         body {
+            margin: 0;
+           font-family: "San Francisco", sans-serif;
+            background-color: rgb(16, 23, 33);
+            src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+        }
+        .marquee {
+            background-color: rgb(26, 36, 59);
+            color: white;
+            padding: 5px 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .marquee span {
+            display: inline-block;
+            animation: marquee 60s linear infinite;
+            word-spacing: 10%; /* Адаптивные отступы между предложениями */
+        }
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        body {
+            margin: 0;
+            font-family: "San Francisco", sans-serif;
+            background-color: rgb(16, 23, 33);
+            src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+        }
+        .navbar {
+            background-color: rgb(24, 40, 53);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            padding: 0 ;
+        }
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 0 20px;
+        }
+        .navbar .buttons {
+            display: flex;
+            gap: 0px;
+        }
+        .navbar button {
+            background-color: rgb(116, 26, 26);
+            border: none;
+            color: white;
+            padding: 0 20px;
+            height: 60px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .navbar button:hover {
+            background-color: rgb(172,23,27);
+        }
+        .marquee .sentence {
+            margin-right: 200px; /* Адаптивные отступы между предложениями */
+        }
+    </style>
+</head>
+<body>
+<div class="marquee">
+    <span id="marquee-text">
+        <span  class="sentence">Игр для поиска тиммейтов > 100. </span>
+        <span  class="sentence">Количество найденных тиммейтов сегодня: 1223.</span>
+        <span  class="sentence">Пользователей зарегистрированно: 120000.</span>
+        <span  class="sentence">Количество активных заявок: 663</span>
+        </span>
+</div>
+    <div class="navbar">
+        <div class="logo">Логотип</div>
+        <div class="buttons">
+            <button>Главная</button>
+            <button>Поиск игроков</button>
+            <button>Войти</button>
+            <button>Зарегистрироваться</button>
+        </div>
+    </div>
+ <script>
+        function startMarquee() {
+            const marquee = document.querySelector('.marquee');
+            const text = document.getElementById('marquee-text');
+            const marqueeWidth = marquee.offsetWidth;
+            const textWidth = text.offsetWidth;
+            const duration = (textWidth + marqueeWidth) / 50; // Скорость в пикселях в секунду
+
+            text.style.animation = `marquee ${duration}s linear infinite`;
+        }
+
+        window.onload = startMarquee;
+    </script>
+</body>
+</html>

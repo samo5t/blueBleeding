@@ -40,7 +40,6 @@ body {
     background-color: #343a40;
     color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -72,7 +71,6 @@ li a:hover {
 button {
     background-color: #343a40;
     border: none;
-    border-radius: 5px;
     padding: 10px 15px;
     transition: background-color 0.3s ease;
 }

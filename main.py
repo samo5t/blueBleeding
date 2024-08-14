@@ -45,7 +45,7 @@ def authorization():
 
             if user:
                 session['username'] = username
-                return redirect(url_for('home_page'))
+                return redirect(url_for('header'))
             else:
                 return render_template('authorization.html', msg='Invalid username or password')
 
@@ -54,10 +54,10 @@ def authorization():
 
     return render_template('authorization.html', msg='')
 
-@app.route("/home-page")
-def home_page():
+@app.route("/header", methods=["GET", "POST"])
+def header():
     if 'username' in session:
-        return render_template('home-page.html', username=session['username'])
+        return render_template('header.html', username=session['username'])
     else:
         return redirect(url_for('authorization'))
 

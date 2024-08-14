@@ -9,38 +9,62 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body class="body-style">
-    <div class="wrapper">
-        <form method="POST" action="/register">
-            <h1>
-                Регистрация
-            </h1>
-            <div class="input-box">
-                <input type="text" placeholder="Логин" required>
-                <i class='bx bxs-user'></i>
+<body>
+    <nav class="header"> <!-- ИНТЕГРИРОВАЛ ШАПКУ АРТЁМА В ПОЛЕ РЕГИСТРАЦИИ -->
+        <div class="marquee">
+            <span id="marquee-text">
+                <span class="sentence">Игр для поиска тиммейтов > 100. </span>
+                <span class="sentence">Количество найденных тиммейтов сегодня: 1223.</span>
+                <span class="sentence">Пользователей зарегистрированно: 120000.</span>
+                <span class="sentence">Количество активных заявок: 663</span>
+
+            </span>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://media.discordapp.net/attachments/1270117157988204646/1273156525548109824/Remove-bg.ai_1723614523985.png?ex=66bd96e9&is=66bc4569&hm=f683d6cfb605a15e0665a30678fa0a1dc0d2bd9b4c3b9342db07b50c6626b273&=&format=webp&quality=lossless&width=563&height=563"
+                    alt="Логотип">
             </div>
-            <div class="input-box">
-                <input type="text" placeholder="Почта" required>
-                <i class='bx bxs-envelope'></i>
+            <div class="buttons">
+                <form action="https://google.com"><button type="submit">Главная</button></form>
+                <button>Поиск игроков</button>
+                <form action="/authorization"><button type="submit">Войти</button></form>
+                <button>Зарегистрироваться</button>
             </div>
-            <div class="input-box">
-                <input type="password" name = "passwordLabel" placeholder="Пароль" required>
-                <i class='bx bxs-lock-alt'></i>
-            </div>
-            <!-- <div class="input-box">
+        </div>
+    </nav>
+    <nav class="registration-window"> 
+        <div class="wrapper">
+            <form method="POST" action="/register">
+                <h1>
+                    Регистрация
+                </h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Логин" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Почта" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="passwordLabel" placeholder="Пароль" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <!-- <div class="input-box">
                 <input type="password" name = "passwordLabel" placeholder="Повторите пароль" required>
                 <i class='bx bxs-lock-alt'></i>
             </div> -->
-            <!-- <div class="ramamber-forgot">
+                <!-- <div class="ramamber-forgot">
                 <label><input type="checkbox">Запомни меня</label>
                 <a href="#">Забыл пароль</a>
             </div> -->
-            <button type="sumbit" class="btn">Зарегистрироваться</button>
-            <div class="register-link"></div>
-            <br>
-            <p>У вас уже есть учетная запись?<a href="">Войти</a></p>
-        </form>
-
+                <button type="sumbit" class="btn">Зарегистрироваться</button>
+                <div class="register-link"></div>
+                <br>
+                <p>У вас уже есть учетная запись?<a href="#">Войти</a></p>
+            </form>
+    </nav>
 </body>
 
 </html>

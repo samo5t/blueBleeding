@@ -74,12 +74,19 @@ body {
         .marquee .sentence {
             margin-right: 200px; /* Адаптивные отступы между предложениями */
         }
+.registration-window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    /* background-color: rgb(8, 18, 30); */
+}
 .body-style {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: rgb(8, 18, 30);
+    min-height: 85vh;
+    /* background-color: rgb(8, 18, 30); */
 }
 
 .wrapper {
@@ -186,4 +193,9 @@ form h1 {
 
 .top-header {
     background-color:rgba(172, 23, 27);
+}
+
+.header {
+    position: sticky;
+    top: 0;
 }

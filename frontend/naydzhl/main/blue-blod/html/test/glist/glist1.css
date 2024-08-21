@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    background-color: #000000; /* Фон черный */
+    color: #ffffff; /* Белый текст */
+    font-family: Arial, sans-serif;
+  }
+  
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .left-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрирует кнопки по вертикали */
+    margin-right: 40px; /* Отступ от меню до контента */
+  }
+  
+  .left-menu button {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    text-align: left;
+    width: 200px; /* Ширина кнопок */
+  }
+  
+  .left-menu button:last-child {
+    margin-bottom: 0; /* Убираем отступ у последней кнопки */
+  }
+  
+  .left-menu button:hover {
+    background-color: #444;
+  }
+  
+  .content-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .avatar-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    width: 150px;
+    height: 200px;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .status {
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    padding: 10px;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .info-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    width: 200px;
+    text-align: left;
+  }
+  
+  .info-item:last-child {
+    margin-bottom: 0; /* Убираем отступ у последнего элемента */
+  }
